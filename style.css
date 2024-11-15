@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: box;
+}
+
+body {
+    background-color: plum;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+header nav {
+    width: 99vw;
+    height: 80px;
+    font-size: 16px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /*FIJAR POSICION*/
+    z-index: 1; /*ESTAR EN PRIMERA POSISION*/
+}
+
+#pinterest-icon {
+    width: 25px;
+    height: 25px;
+    padding: 4px;
+}
+
+#pinterest-icon:hover {
+    background-color: #e9e9e9;
+    border-radius: 150px;
+    padding: 6px;
+}
+.first-list{
+    display: flex;
+}
+
+.first-list li{
+    list-style: none;
+    padding: 14px 12px;
+}
+
+.first-list a{
+    text-decoration: none;
+    color: black;
+}
+
+#inicio{
+    background-color: black;
+    color: white;
+    padding: 15px 15px;
+    border-radius: 25px;
+}
+
+.search{
+    /* FLEX-GROW SIRVE PARA QUE SE VALLAN ADAPTANDO LOS ELEMENTOS AL CONTENEDOR */
+    flex-grow: 1;
+    height: 48px;
+    background-color: #e9e9e9;
+    border-radius: 30px;
+}
+
+.search :hover{
+    background-color: #e1e1e1;
+    border-radius: 30px;
+}
+
+.search:focus-within{
+    border: 4px solid #7fc1ff;
+}
+
+.barra{
+    display: flex;
+    align-items: center;
+    height: 48px;
+}
+
+#lupa{
+    padding: 13px;
+    color: #767676;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.barra input{
+   border: none;
+   /* INHERIT ES HEREDAR- EL COLOR DEL PADRE */
+   background-color: inherit; 
+}
+
+.right.items span{
+    padding: 8px;
+    color: #767676;
+    font-size: 28px;
+}
+
+.right.items span:hover{
+    background-color: #e9e9e9;
+    border-radius: 150px;
+}
+
+.imagenes{
+    columns: 5 240px;
+    margin: auto;
+}
+
+.card-image{
+    position: relative;
+    padding: 6px;
+}
+
+.card-image img{
+    border-radius: 15px;
+    min-width: 240px;
+    max-width: 240px;
+}
+
+.card-image:hover > :first-child{
+    filter: brightness(60%);
+}
+
+.card-image:hover > * {
+    visibility: visible;
+    display: inline;
+}
+
+.button{
+    position: absolute;
+    left: 55%;
+    top: 5%;
+    background-color: #e60023;
+    padding: 13px 15px;
+    border-radius: 30px;
+    border: none;
+    visibility: hidden; /*OCULTAR EL BOTON DE GUARDAR */
+}
+
+/* TEXTO DE GUARDAD ESTILOS */
+.button a{
+    text-decoration: none; /*OCULTAR SUBRAYADO*/
+    color: white; 
+    font-size: 16px;
+    font-weight: bold; /*lETRA MAS GRUESA*/
+}
+
+/* ICONO DE CARGAR */
+.oculto1{
+    position: absolute;
+    left: 60%;
+    bottom: 15px;
+    background-color: white;
+    font-size: 30px;
+    border-radius: 50px;
+    color: black;
+    font-weight: bold; /*MAS GRUESO*/
+    padding: 4px;
+    visibility: hidden;
+    display: none;
+}
+
+/* ICONO DE 3 PUNTOS HORIZONTAL */
+.oculto2{
+    position: absolute;
+    left: 78%;
+    bottom: 15px;
+    background-color: white;
+    font-size: 30px;
+    border-radius: 50px;
+    color: black;
+    font-weight: bold; /*MAS GRUESO*/
+    padding: 4px;
+    visibility: hidden; /*OCULTAR*/
+    display: none;
+}
