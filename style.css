@@ -5,9 +5,10 @@
 }
 
 body {
-    background-color: plum;
+    background-color: white;
     font-family: sans-serif;
     font-weight: bold;
+   
 }
 
 header nav {
@@ -102,9 +103,16 @@ header nav {
     border-radius: 150px;
 }
 
+.contenido{
+    position: absolute;
+    margin-top: 80px;
+    padding-left: 50px;
+    padding-right: 30px;
+}
+
 .imagenes{
     columns: 5 240px;
-    margin: auto;
+    margin:auto;
 }
 
 .card-image{
@@ -143,7 +151,7 @@ header nav {
     text-decoration: none; /*OCULTAR SUBRAYADO*/
     color: white; 
     font-size: 16px;
-    font-weight: bold; /*lETRA MAS GRUESA*/
+    font-weight: bolder; /*lETRA MAS GRUESA*/
 }
 
 /* ICONO DE CARGAR */
@@ -152,10 +160,10 @@ header nav {
     left: 60%;
     bottom: 15px;
     background-color: white;
-    font-size: 30px;
+    font-size: 25px;
     border-radius: 50px;
     color: black;
-    font-weight: bold; /*MAS GRUESO*/
+    font-weight:normal; /*MAS GRUESO*/
     padding: 4px;
     visibility: hidden;
     display: none;
@@ -167,10 +175,10 @@ header nav {
     left: 78%;
     bottom: 15px;
     background-color: white;
-    font-size: 30px;
+    font-size: 25px;
     border-radius: 50px;
     color: black;
-    font-weight: bold; /*MAS GRUESO*/
+    font-weight: normal; /*MAS GRUESO*/
     padding: 4px;
     visibility: hidden; /*OCULTAR*/
     display: none;
