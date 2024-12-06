@@ -1,6 +1,8 @@
 * {
+    /* recetear todos los margenes*/
     margin: 0;
     padding: 0;
+    /* borde en valor de una caja */
     border: box;
 }
 
@@ -106,8 +108,6 @@ header nav {
 .contenido{
     position: absolute;
     margin-top: 80px;
-    padding-left: 50px;
-    padding-right: 30px;
 }
 
 .imagenes{
